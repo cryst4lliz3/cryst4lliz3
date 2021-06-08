@@ -44,7 +44,7 @@ plugins:
 
 author:
   name   : "Ahmad A'fif bin Zulkifli"
-  avatar : "/assets/images/me.jpeg"
+  avatar : "/assets/images/me.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Website"
