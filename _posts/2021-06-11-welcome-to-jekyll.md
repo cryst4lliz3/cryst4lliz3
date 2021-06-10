@@ -1,9 +1,14 @@
 ---
 title: "Nginx"
-date: 
 categories:
   - service hardening
+  - webserver
+  - reverse proxy
+  - mail proxy
 ---
+
+<p align="center"> <img src="https://raw.githubusercontent.com/cryst4lliz3/cryst4lliz3.github.io/master/assets/images/nginx/nginx.png"></p>
+
 
 ## What is Nginx
 Nginx, stylized as NGINX, nginx or NginX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability. In addition to its HTTP server capabilities, NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.
@@ -29,4 +34,5 @@ Nginx, stylized as NGINX, nginx or NginX is open source software for web serving
 
 ### Hide Nginx version from Header
 
-![Nginx Version from Header](/assets/images/nginx/version-from-header.png)
+<p align="center"> <img src="https://raw.githubusercontent.com/cryst4lliz3/cryst4lliz3.github.io/master/assets/images/nginx/version-from-header.png"></p>
+
