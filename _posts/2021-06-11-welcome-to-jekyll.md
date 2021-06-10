@@ -28,9 +28,10 @@ Nginx, stylized as NGINX, nginx or NginX is open source software for web serving
 
 ## Configuration
 
-### Webserver
-### Reverse Proxy
+### Load Balancer
 ### Mail Proxy
+### Reverse Proxy
+### Webserver
 
 ## Best Practises
 
@@ -42,4 +43,38 @@ Generally, when a user requests an unavailable/broken link on an NginxX based we
 
 As you can see, the NGINX server string contains server name and version. Attackers can use this information to hack your website. So it is important to hide NGINX server information from response.
 
-Here are the steps to hide NGINX server name and version from response.
+Steps to do:
+
+1. Open terminal and run the command below to open NGINX configuration file in a nano text editor.
+
+```bash
+sudo nano /etc/nginx/nginx.conf
+```
+
+2. Add the following line to http block. 
+
+```conf
+http{
+    ...
+    server_tokens off;
+    ...
+}
+```
+
+3. Run the following command to check syntax of your updated config file.
+
+```bash
+sudo nginx -t
+```
+
+If there are no errors, run the following command to restart NGINX server.
+
+Debian/Ubuntu
+```bash
+sudo service nginx reload
+```
+
+Redhat/CentOS
+```bash
+systemctl restart nginx
+```
