@@ -2,6 +2,7 @@
 title: "Nginx"
 categories:
   - service hardening
+tags:
   - webserver
   - reverse proxy
   - mail proxy
