@@ -29,3 +29,4 @@ Nginx, stylized as NGINX, nginx or NginX is open source software for web serving
 
 ### Hide Nginx version from Header
 
+![Nginx Version from Header](/assets/images/nginx/version-from-header.png)
