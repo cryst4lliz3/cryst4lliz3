@@ -3,9 +3,10 @@ title: "Nginx"
 categories:
   - service hardening
 tags:
-  - webserver
-  - reverse proxy
+  - load balancer
   - mail proxy
+  - reverse proxy
+  - webserver
 ---
 
 <p align="center"> <img src="https://raw.githubusercontent.com/cryst4lliz3/cryst4lliz3.github.io/master/assets/images/nginx/nginx.png"></p>
@@ -35,5 +36,10 @@ Nginx, stylized as NGINX, nginx or NginX is open source software for web serving
 
 ### Hide Nginx version from Header
 
+Generally, when a user requests an unavailable/broken link on an NginxX based website, then they get the following message.
+
 <p align="center"> <img src="https://raw.githubusercontent.com/cryst4lliz3/cryst4lliz3.github.io/master/assets/images/nginx/version-from-header.png"></p>
 
+As you can see, the NGINX server string contains server name and version. Attackers can use this information to hack your website. So it is important to hide NGINX server information from response.
+
+Here are the steps to hide NGINX server name and version from response.
